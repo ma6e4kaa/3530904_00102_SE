@@ -1,2 +1,6 @@
 # 3530904_00102_SE
-This repository was created for an educational software engineering project.
+
+Тема проекта:
+
+Участники:
+1. Ушакова Мария Геннадьевна, 3530904/00102
