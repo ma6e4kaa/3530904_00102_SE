@@ -1,0 +1,51 @@
+2022-09-26T11:05:10.537467Z 0 [Warning] [MY-010915] [Server] 'NO_ZERO_DATE', 'NO_ZERO_IN_DATE' and 'ERROR_FOR_DIVISION_BY_ZERO' sql modes should be used with strict mode. They will be merged with strict mode in a future release.
+2022-09-26T11:05:10.537830Z 0 [Warning] [MY-010918] [Server] 'default_authentication_plugin' is deprecated and will be removed in a future release. Please use authentication_policy instead.
+2022-09-26T11:05:10.537872Z 0 [System] [MY-013169] [Server] D:\ServerPHP\bin\mysql-8.0\bin\mysqld.exe (mysqld 8.0.30) initializing of server in progress as process 11900
+2022-09-26T11:05:10.587359Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2022-09-26T11:05:10.922682Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2022-09-26T11:05:12.251097Z 6 [Warning] [MY-010453] [Server] root@localhost is created with an empty password ! Please consider switching off the --initialize-insecure option.
+2022-09-26T11:06:21.187970Z 0 [Warning] [MY-010915] [Server] 'NO_ZERO_DATE', 'NO_ZERO_IN_DATE' and 'ERROR_FOR_DIVISION_BY_ZERO' sql modes should be used with strict mode. They will be merged with strict mode in a future release.
+2022-09-26T11:06:21.188264Z 0 [Warning] [MY-010918] [Server] 'default_authentication_plugin' is deprecated and will be removed in a future release. Please use authentication_policy instead.
+2022-09-26T11:06:21.188318Z 0 [System] [MY-010116] [Server] D:\ServerPHP\bin\mysql-8.0\bin\mysqld.exe (mysqld 8.0.30) starting as process 12616
+2022-09-26T11:06:21.230305Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2022-09-26T11:06:21.473817Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2022-09-26T11:06:21.943565Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2022-09-26T11:06:21.944221Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
+2022-09-26T11:06:21.982584Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Bind-address: '::' port: 33060
+2022-09-26T11:06:21.982702Z 0 [System] [MY-010931] [Server] D:\ServerPHP\bin\mysql-8.0\bin\mysqld.exe: ready for connections. Version: '8.0.30'  socket: ''  port: 3306  MySQL Community Server - GPL.
+2022-09-30T01:27:35.238186Z 0 [System] [MY-013105] [Server] D:\ServerPHP\bin\mysql-8.0\bin\mysqld.exe: Normal shutdown.
+2022-09-30T01:27:36.051919Z 0 [System] [MY-010910] [Server] D:\ServerPHP\bin\mysql-8.0\bin\mysqld.exe: Shutdown complete (mysqld 8.0.30)  MySQL Community Server - GPL.
+2022-09-30T01:27:57.243086Z 0 [Warning] [MY-010915] [Server] 'NO_ZERO_DATE', 'NO_ZERO_IN_DATE' and 'ERROR_FOR_DIVISION_BY_ZERO' sql modes should be used with strict mode. They will be merged with strict mode in a future release.
+2022-09-30T01:27:57.245450Z 0 [Warning] [MY-010918] [Server] 'default_authentication_plugin' is deprecated and will be removed in a future release. Please use authentication_policy instead.
+2022-09-30T01:27:57.245514Z 0 [System] [MY-010116] [Server] D:\ServerPHP\bin\mysql-8.0\bin\mysqld.exe (mysqld 8.0.30) starting as process 5932
+2022-09-30T01:27:57.303875Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2022-09-30T01:27:57.671238Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2022-09-30T01:27:58.186731Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2022-09-30T01:27:58.187596Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
+2022-09-30T01:27:58.271999Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Bind-address: '::' port: 33060
+2022-09-30T01:27:58.272267Z 0 [System] [MY-010931] [Server] D:\ServerPHP\bin\mysql-8.0\bin\mysqld.exe: ready for connections. Version: '8.0.30'  socket: ''  port: 3306  MySQL Community Server - GPL.
+2022-10-05T15:56:50.613816Z 8 [ERROR] [MY-012611] [InnoDB] Operating system error number 2 in a file operation.
+2022-10-05T15:56:50.616667Z 8 [Warning] [MY-012093] [InnoDB] Cannot open '.\yii2basic\user.ibd'. Have you deleted .ibd files under a running mysqld server?
+2022-10-05T15:56:56.952860Z 8 [ERROR] [MY-012611] [InnoDB] Operating system error number 2 in a file operation.
+2022-10-05T15:56:56.953584Z 8 [Warning] [MY-012093] [InnoDB] Cannot open '.\yii2basic\role.ibd'. Have you deleted .ibd files under a running mysqld server?
+2022-10-05T15:56:56.954330Z 8 [ERROR] [MY-012611] [InnoDB] Operating system error number 2 in a file operation.
+2022-10-05T15:56:56.955250Z 8 [ERROR] [MY-012646] [InnoDB] File (unknown): 'file_status_win_stat64' returned OS error 71.
+2022-10-05T15:56:56.957669Z 8 [ERROR] [MY-012611] [InnoDB] Operating system error number 2 in a file operation.
+2022-10-05T15:56:56.958387Z 8 [ERROR] [MY-012646] [InnoDB] File .\yii2basic\role.ibd: 'rename' returned OS error 71.
+2022-10-05T15:57:05.539150Z 8 [ERROR] [MY-012611] [InnoDB] Operating system error number 2 in a file operation.
+2022-10-05T15:57:05.539941Z 8 [Warning] [MY-012093] [InnoDB] Cannot open '.\yii2basic\tour.ibd'. Have you deleted .ibd files under a running mysqld server?
+2022-10-05T15:57:05.540874Z 8 [ERROR] [MY-012611] [InnoDB] Operating system error number 2 in a file operation.
+2022-10-05T15:57:05.541407Z 8 [ERROR] [MY-012646] [InnoDB] File (unknown): 'file_status_win_stat64' returned OS error 71.
+2022-10-05T15:57:05.542857Z 8 [ERROR] [MY-012611] [InnoDB] Operating system error number 2 in a file operation.
+2022-10-05T15:57:05.543390Z 8 [ERROR] [MY-012646] [InnoDB] File .\yii2basic\tour.ibd: 'rename' returned OS error 71.
+2022-10-05T16:44:16.543918Z 0 [System] [MY-013105] [Server] D:\ServerPHP\bin\mysql-8.0\bin\mysqld.exe: Normal shutdown.
+2022-10-05T16:44:17.877642Z 0 [System] [MY-010910] [Server] D:\ServerPHP\bin\mysql-8.0\bin\mysqld.exe: Shutdown complete (mysqld 8.0.30)  MySQL Community Server - GPL.
+2022-10-05T16:44:41.139426Z 0 [Warning] [MY-010915] [Server] 'NO_ZERO_DATE', 'NO_ZERO_IN_DATE' and 'ERROR_FOR_DIVISION_BY_ZERO' sql modes should be used with strict mode. They will be merged with strict mode in a future release.
+2022-10-05T16:44:41.141376Z 0 [Warning] [MY-010918] [Server] 'default_authentication_plugin' is deprecated and will be removed in a future release. Please use authentication_policy instead.
+2022-10-05T16:44:41.141469Z 0 [System] [MY-010116] [Server] D:\ServerPHP\bin\mysql-8.0\bin\mysqld.exe (mysqld 8.0.30) starting as process 5956
+2022-10-05T16:44:41.220972Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2022-10-05T16:44:41.575684Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2022-10-05T16:44:42.281119Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2022-10-05T16:44:42.281991Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
+2022-10-05T16:44:42.403897Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Bind-address: '::' port: 33060
+2022-10-05T16:44:42.404395Z 0 [System] [MY-010931] [Server] D:\ServerPHP\bin\mysql-8.0\bin\mysqld.exe: ready for connections. Version: '8.0.30'  socket: ''  port: 3306  MySQL Community Server - GPL.
