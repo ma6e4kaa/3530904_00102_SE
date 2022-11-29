@@ -10,16 +10,7 @@ use yii\bootstrap5\ActiveForm;
 
 <div class="user-status-form">
 
-    <?php $form = ActiveForm::begin([
-        'id' => 'signup-form',
-        'layout' => 'horizontal',
-        'fieldConfig' => [
-            'template' => "{label}\n{input}\n{error}",
-            'labelOptions' => ['class' => 'col-lg-3 col-form-label mr-lg-3'],
-            'inputOptions' => ['class' => 'col-lg-3 form-control', 'style' => 'margin-left: 11px;'],
-            'errorOptions' => ['class' => 'col-lg-7 invalid-feedback'],
-        ],
-    ]); ?>
+    <?php $form = ActiveForm::begin(['id' => 'user-status-form']); ?>
 
     <?= $form->field($model, 'status')->textInput(['maxlength' => true]) ?>
 

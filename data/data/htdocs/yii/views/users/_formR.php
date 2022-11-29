@@ -23,7 +23,7 @@ use kartik\select2\Select2;
 <div class="user-form">
 <div class="container">
     <?php $form = ActiveForm::begin([
-        'id' => 'signup-form',
+        'id' => 'users-form',
         'layout' => 'horizontal',
         'fieldConfig' => [
             'template' => "{label}\n{input}\n{error}",

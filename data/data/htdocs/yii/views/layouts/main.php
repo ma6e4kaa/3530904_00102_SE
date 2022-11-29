@@ -61,7 +61,6 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => '/f
                              ['label' => 'Города', 'url' => '/city'],
                              ['label' => 'Товары', 'url' => '/goods'],
                              ['label' => 'Достопримечательности', 'url' => '/showplace'],
-                             ['label' => 'Тэги тура', 'url' => '/tags'],
                              ['label' => 'Статус тура', 'url' => '/tour-status'],
                              ['label' => 'Статус пользователя', 'url' => '/user-status'],
                              ['label' => 'Пользователи', 'url' => '/users'],

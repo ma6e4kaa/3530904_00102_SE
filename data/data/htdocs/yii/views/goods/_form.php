@@ -10,7 +10,7 @@ use yii\bootstrap5\ActiveForm;
 
 <div class="goods-form">
     <div classs="container">
-        <?php $form = ActiveForm::begin(); ?>
+        <?php $form = ActiveForm::begin(['id' => 'goods-form']); ?>
         <div class="row">
             <div class="col-xs-12 col-12 col-md-12 col-lg-12">
                 <?= $form->field($model, 'name')->textInput(['maxlength' => true]) ?>

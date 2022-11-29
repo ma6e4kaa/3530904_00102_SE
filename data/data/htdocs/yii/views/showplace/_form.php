@@ -12,7 +12,7 @@ use kartik\select2\Select2;
 
 <div class="showplace-form">
 
-    <?php $form = ActiveForm::begin(); ?>
+    <?php $form = ActiveForm::begin(['id' => 'showplace-form']); ?>
 
     <?= $form->field($model, 'showplace')->textInput(['maxlength' => true]) ?>
 

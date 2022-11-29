@@ -10,7 +10,7 @@ use yii\bootstrap5\ActiveForm;
 
 <div class="tour-status-form">
 
-    <?php $form = ActiveForm::begin(); ?>
+    <?php $form = ActiveForm::begin(['id' => 'tour-status-form']); ?>
 
     <?= $form->field($model, 'tour_status')->textInput(['maxlength' => true]) ?>
 

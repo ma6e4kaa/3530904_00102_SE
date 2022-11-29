@@ -62,9 +62,13 @@ $this->params['breadcrumbs'][] = $this->title;
         'columns' => [
             ['class' => 'yii\grid\SerialColumn'],
 
-            'good.name',
+            ['attribute' => 'name','label' => 'Наименование', 'value' => function($model) {
+                return $model->good->name;
+            }],
             'quantity',
-            'good.cost',
+            ['attribute' => 'cost','label' => 'Стоимость', 'value' => function($model) {
+                return $model->good->cost;
+            }],
         ],
     ]); ?>
 

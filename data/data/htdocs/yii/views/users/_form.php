@@ -13,7 +13,7 @@ use kartik\select2\Select2;
 
 <div class="user-attr-form">
 <div class="container">
-    <?php $form = ActiveForm::begin(); ?>
+    <?php $form = ActiveForm::begin(['id' => 'users-attr-form']); ?>
     <div class="row">
         <div class="col-xs-4 col-4 col-md-4 col-lg-4">
     <?= $form->field($model, 'fio')->textInput(['maxlength' => true]) ?>

@@ -48,7 +48,6 @@ class Tickets extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'id' => Yii::t('app', 'ID'),
             'tour_date_id' => Yii::t('app', 'Дата тура'),
             'tour_id' => Yii::t('app', 'Тур'),
             'guest_id' => Yii::t('app', 'Гость'),

@@ -34,7 +34,7 @@ $statuses = app\models\UserStatus::find()->orderBy('status')->all();
 
 <div class="tickets-form">
     <div class="container">
-        <?php $form = ActiveForm::begin(); ?>
+        <?php $form = ActiveForm::begin(['id' => 'tickets-form']); ?>
         <div class="row">
             <div class="col-xs-6 col-6 col-md-6 col-lg-6">
         <?= $form->field($model, 'tour_id')->widget(Select2::classname(), [
