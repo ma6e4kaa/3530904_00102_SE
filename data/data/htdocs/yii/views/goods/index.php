@@ -32,9 +32,9 @@ $this->title = Yii::t('app', 'Товары');
     <h1><?= Html::encode($this->title) ?></h1>
 
     <p>
-        <?php if (Yii::$app->user->identity->role == 3) { ?>
+        <?php if (!Yii::$app->user->isGuest) { if (Yii::$app->user->identity->role == 3) { ?>
         <?= Html::a(Yii::t('app', 'Добавить товар'), ['create'], ['class' => 'btn btn-success']) ?>
-        <?php } ?>
+        <?php } }?>
     </p>
 
     <?php Pjax::begin(); ?>

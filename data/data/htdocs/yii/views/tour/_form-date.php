@@ -14,7 +14,7 @@ $statuses = \app\models\TourStatus::find()->orderBy('tour_status')->all();
 ?>
 
 <div class="tour-date-form">
-    <?php $form = ActiveForm::begin(); ?>
+    <?php $form = ActiveForm::begin(['id' => 'date-form']); ?>
     <div class="container">
         <div class="row">
             <div class="col-xs-6 col-6 col-md-6 col-lg-6">

@@ -2,6 +2,7 @@
 
 namespace app\controllers;
 
+use app\models\Tickets;
 use app\models\Tour;
 use app\models\TourSearch;
 use app\models\TourDateSearch;
@@ -88,6 +89,24 @@ class TourController extends Controller
         return $this->render('view-station', [
             'model' => $this->findStationModel($id),
         ]);
+    }
+    
+    public function actionBuy($id)
+    {
+        $old_model = Tickets::find()->where(['tour_date_id' => $id])->andWhere(['guest_id' => \Yii::$app->user->identity->id])
+                ->andWhere(['<>','status', 3])->all();
+        
+        if (!$old_model) {
+            $model = new Tickets();
+            $model->tour_date_id = $id;
+            $model->guest_id = \Yii::$app->user->identity->id;
+            $model->status = 1;
+            $model->save();
+            return $this->redirect(['/my-tickets/view', 'id' => $model->id]);
+        }
+//        var_dump($old_model);
+        \Yii::$app->session->setFlash('error', 'Вами уже был куплен билет. Выберите другую дату тура.');
+        return $this->redirect(['/tour/view', 'id' => $_SESSION['tour_id']]);
     }
 
     /**

@@ -10,7 +10,7 @@ use yii\grid\ActionColumn;
 
 /** @var yii\web\View $this */
 /** @var app\models\Tour $model */
-
+$_SESSION['tour_id'] = $model->id;
 $this->title = $model->name;
 $this->params['breadcrumbs'][] = ['label' => Yii::t('app', 'Туры'), 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
@@ -65,7 +65,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
     <p>
         <?php if (Yii::$app->user->identity->role == 3) { ?>
-        <?= Html::a(Yii::t('app', 'Добавить остановку'), ['create-station', 'id' => $model->id], ['class' => 'btn btn-success']) ?>
+        <?= Html::a(Yii::t('app', 'Добавить остановку'), ['create-station', 'id' => $model->id], ['class' => 'btn btn-success', 'id' => 'btn1']) ?>
         <?php } ?>
     </p>
 
@@ -86,6 +86,7 @@ $this->params['breadcrumbs'][] = $this->title;
                 'urlCreator' => function ($action, \app\models\TourStation $model, $key, $index, $column) {
                     return Url::toRoute([$action.'-station', 'id' => $model->id]);
                  },
+                'visible' => Yii::$app->user->identity->role == 1 ? 0 : 1,
                 'template' => Yii::$app->user->identity->role == 3 ? '{view} {update} {delete}' : '',
             ],
         ],
@@ -100,7 +101,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
     <p>
         <?php if (Yii::$app->user->identity->role == 3) { ?>
-        <?= Html::a(Yii::t('app', 'Добавить дату'), ['create-date', 'id' => $model->id], ['class' => 'btn btn-success']) ?>
+        <?= Html::a(Yii::t('app', 'Добавить дату'), ['create-date', 'id' => $model->id], ['class' => 'btn btn-success', 'id' => 'btn2']) ?>
         <?php } ?>
     </p>
 
@@ -134,11 +135,21 @@ $this->params['breadcrumbs'][] = $this->title;
                 return $model->user->fio;
             }
             ],
+            ['value' => function ($model) {
+                if ($model->tour_status->id == 1) {
+                    return "<a href='/tour/buy?id=".$model->id."'>Купить</a>";
+                } else {
+                    return '';
+                }
+            }, 'format' => 'raw',
+                'visible' => Yii::$app->user->identity->role == 1 ? 1 : 0,
+            ],
             [
                 'class' => ActionColumn::className(),
                 'urlCreator' => function ($action, \app\models\TourDate $model, $key, $index, $column) {
                     return Url::toRoute([$action.'-date', 'id' => $model->id]);
                  },
+                'visible' => Yii::$app->user->identity->role == 1 ? 0 : 1,
                 'template' => Yii::$app->user->identity->role == 3 ? '{view} {update} {delete}' : (Yii::$app->user->identity->role == 2 ? '{view} {update}' : ''),
             ],
         ],

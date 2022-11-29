@@ -39,7 +39,7 @@ function checkPassword() {
 </script>
 <div class="user-form">
     <?php $form = ActiveForm::begin([
-        'id' => 'signup-form',
+        'id' => 'users-form',
         'layout' => 'horizontal',
         'fieldConfig' => [
             'template' => "{label}\n{input}\n{error}",

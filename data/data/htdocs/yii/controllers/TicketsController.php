@@ -79,7 +79,7 @@ class TicketsController extends Controller
         $model = new Tickets();
 
         if ($this->request->isPost) {
-            if ($model->load($this->request->post())) {
+            if ($model->load($this->request->post()) && $model->validate()) {
                 $tour_date = \app\models\TourDate::find()->where(['id'=> $model->tour_date_id])->one();
                 if ($tour_date->seats < 1) {
                     \Yii::$app->session->setFlash('error', "Мест на тур больше нет!");

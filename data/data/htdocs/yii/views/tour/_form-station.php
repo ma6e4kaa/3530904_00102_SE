@@ -17,7 +17,7 @@ $showplaces = app\models\Showplace::find()->orderBy('showplace')->all();
 </style>
 <div class="tour-station-form">
     <div class="container">
-        <?php $form = ActiveForm::begin(); ?>
+        <?php $form = ActiveForm::begin(['id'=>'station-form']); ?>
         <div class="row">
             <div class="col-xs-6 col-6 col-md-6 col-lg-6">
                 <?= $form->field($model, 'time_stop')->widget(\yii\widgets\MaskedInput::className(), [

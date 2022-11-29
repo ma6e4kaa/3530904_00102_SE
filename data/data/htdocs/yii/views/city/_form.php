@@ -10,7 +10,7 @@ use yii\bootstrap5\ActiveForm;
 
 <div class="city-form">
 
-    <?php $form = ActiveForm::begin(); ?>
+    <?php $form = ActiveForm::begin(['id' => 'city-form']); ?>
 
     <?= $form->field($model, 'city')->textInput(['maxlength' => true]) ?>
 

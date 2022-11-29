@@ -15,7 +15,6 @@ use Yii;
  *
  * @property TourDate[] $tourDates
  * @property TourStation[] $tourStations
- * @property TourTag[] $tourTags
  */
 class Tour extends \yii\db\ActiveRecord
 {
@@ -72,15 +71,5 @@ class Tour extends \yii\db\ActiveRecord
     public function getTourStations()
     {
         return $this->hasMany(TourStation::class, ['tour_id' => 'id']);
-    }
-
-    /**
-     * Gets query for [[TourTags]].
-     *
-     * @return \yii\db\ActiveQuery
-     */
-    public function getTourTags()
-    {
-        return $this->hasMany(TourTag::class, ['tour_id' => 'id']);
     }
 }
